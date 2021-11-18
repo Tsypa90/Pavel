@@ -1,7 +1,7 @@
 body {
   margin: 0;
   min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: "Sverdlovsk", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
   color: #222222;
@@ -191,4 +191,16 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+@font-face {
+  font-family: "Sverdlovsk";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Sverdlovsk"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/Sverdlovsk.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/Sverdlovsk.woff") format("woff");
 }
